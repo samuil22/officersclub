@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfficerClub</title>
+    <!-- Favicons 
+    <link href="assets/img/logo.png" rel="icon">-->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- FontAwesome -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- animate -->
+  	<link rel="stylesheet" href="assets/css/animate.min.css"> 
+    <!-- owl carousel-->
+  	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> 
+      <!-- poppins fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top_manu">
+        <div>
+            <p><ion-icon name="call"></ion-icon> +880-2-9358958,9346677</p>
+        </div>
+        <div>
+            <button type="button" class="btn  Link_btn"><i class="fas fa-sign-in-alt"></i> Link</button>
+        </div>
+    </div>
+    <div class="main_nav">
+        <div class="wrapper">
+            <nav>
+              <input type="checkbox" id="show-search">
+              <input type="checkbox" id="show-menu">
+              <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+              <div class="content">
+              <div class="logo">
+                  <a href="#">
+                  <img class="img-fluid" src="assets/img/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="links">
+                    <li>
+                        <a href="#" class="desktop-link">About <ion-icon name="chevron-down-outline"></ion-icon></a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">About </label>
+                        <ul>
+                          <li><a href="#">About Club</a></li>
+                          <li><a href="#">Chairman</a></li>
+                          <li><a href="#">General Secretary</a></li>
+                          <li><a href="#">Former Chairman</a></li>
+                          <li><a href="#">Affiliated Clubs</a></li>
+                          <li><a href="#">Committees</a></li>
+                          <li><a href="#">Members</a></li>
+                        </ul>
+                      </li> 
+                  <li>
+                    <a href="#" class="desktop-link">Hall <ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Hall </label>
+                    <ul>
+                      <li><a href="#">Hall Book</a></li>
+                      <li><a href="#">OCD Hall</a></li>
+                      <li><a href="#">Booking Status</a></li>
+                      <li><a href="#">Make Payment</a></li>
+                      <li><a href="#">Calender</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Cetefitia</a></li>
+                  <li>
+                    <a href="#" class="desktop-link">Services <ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <input type="checkbox" id="show-services">
+                    <label for="show-services">Services</label>
+                    <ul>
+                      <li><a href="#">Catering</a></li>
+                      <li><a href="#">Laundry</a></li> 
+                      <li>
+                        <a href="#" class="desktop-link">Salon <ion-icon name="chevron-down-outline"></ion-icon></a>
+                        <input type="checkbox" id="show-items">
+                        <label for="show-items">Salon</label>
+                        <ul>
+                          <li><a href="#">Salon Booking</a></li>
+                          <li><a href="#">Salon Payment</a></li> 
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Recreation <ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <input type="checkbox" id="show-services">
+                    <label for="show-services">Recreation</label>
+                    <ul> 
+                      <li>
+                        <a href="#" class="desktop-link">Guest House <ion-icon name="chevron-down-outline"></ion-icon></a>
+                        <input type="checkbox" id="show-items">
+                        <label for="show-items">Guest House</label>
+                        <ul>
+                          <li><a href="#">Guest House Book</a></li>
+                          <li><a href="#">Guest House Payment</a></li> 
+                        </ul>
+                      </li>
+                      <li><a href="#">Cyber Cafe</a></li>
+                      <li><a href="#">Housie</a></li> 
+                      <li><a href="#">Library</a></li> 
+                      <li><a href="#">TV Lounge</a></li> 
+                      <li><a href="#">Kids Valley</a></li> 
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Sports & Fitness <ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Sports & Fitness</label> </label>
+                    <ul>
+                      <li><a href="#">Badminton</a></li>
+                      <li><a href="#">GYM</a></li>
+                      <li><a href="#">Squash</a></li>
+                      <li><a href="#">Table Tennis</a></li>
+                      <li><a href="#">Billiard</a></li>
+                      <li><a href="#">Card</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div> 
+            </nav>
+          </div>
+    </div>
+    <!-- landing slider area -->
+    <div class="slider">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/slider01.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block slider_text">
+                  <h1>Officers’  Club Dhaka</h1>
+                  <button type="button" class="btn btn-primary btn-lg">Message</button>
+                  <button type="button" class="btn btn-outline-primary btn-lg">Contact</button>
+                </div>
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div> -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    <div class="fixed_right_btn">
+      <a href="#" data-toggle="modal" data-target="#ModalOne"><i class="far fa-comment-dots"></i></a>
+      <a href="#"><i class="fas fa-poll"></i></a>
+    </div>
+    <div class="fixed_left_btn">
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+    </div>
+    <!-- marquee area -->
+    <div class="
+    ">
+    <marquee class="marquee" direction="left" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start();">
+      <ul class="marquee_ul">
+        <li>Its membership is open only to government officers and the officers of semi-government or autonomous bodies. The land with a colonial building was given to the club by the Public Works Department.</li>
+        <li>The membership of Officer’s Club Dhaka is open only to government officers and the officers of semi-government or autonomous bodies.</li>
+      </ul>
+    </marquee> 
+
+    </div>
+    <!-- about area -->
+    <section id="about">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-8">
+               <h3 class="underline_one">About</h3>
+                <div class="about_text_layout">
+                  <img src="assets/img/slider03.jpg" class="img-fluid" alt="">
+                  <p class="about_text">
+                    <span class="about_text_bold">Officers’ Club Dhaka</span>  was established in 1967 on 4.5 acres (18,000 m2) land in a picturesque setting at Ramna, Bailey Road, Dhaka, Bangladesh. 
+                    ocd-profile-pic Its membership is open only to government officers and the officers of semi-government or autonomous bodies. The land with a colonial building was given to the club by the Public Works Department. The government also provided funds to construct an auditorium, covered badminton complex, swimming pool and tennis courts etc. 
+                    The club has now about 4,200 members and run by an executive committee headed by the cabinet secretary of the government. Its members are elected through secret ballot every two years. The club has a library, a newly built two-storey auditorium, three tennis courts, and facilities to play badminton, table tennis, billiards, cards, chess, etc. 
+                    The Officers’ Club organises contributory dinners and ‘housie sessions’ periodically. It also has a women’s committee that designs and implements social welfare activities with funds generated by the club. <a class="readMore01" href="#">Read More</a> 
+                  </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <h3 class="underline_one">Notice Board</h3>
+              <div class="notice_layout">
+                <div class="notice_item">  
+                    <p>Election Result-2020</p>
+                    <span><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
+                </div>
+                <div class="notice_item">  
+                    <p>OCD Election Result-2020-21</p>
+                    <span><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
+                </div>
+                <div class="notice_item">  
+                    <p>Election Result-2020</p>
+                    <span><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
+                </div>
+                <div class="notice_item">  
+                    <p>OCD Election Result-2019-20</p>
+                    <span><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
+                </div>
+                <div class="notice_item">  
+                    <p>OCD Election Result-2018-19</p>
+                    <span><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
+                </div>
+              </div>
+            </div>
+        </div>
+      </div> 
+    </section>
+    <!-- membership -->
+    <section id="member"> 
+      <div class="container pt-5 pb-5"> 
+        <h3 class="underline_one">Membership</h3>
+        <div class="row pt-3">
+          <div class="col-md-6">
+            <img class="img-fluid" src="assets/img/member.jpg" alt="">
+          </div>
+          <div class="col-md-6 pt-4">
+            <p>The membership of Officer’s Club Dhaka is open only to government officers and the officers of semi-government or autonomous bodies. The land with a colonial building was given to the club by the Public Works Department. The government also provided funds to construct an auditorium, covered badminton complex, swimming pool and tennis courts etc.</p>
+            <button type="button" class="btn filter-button btn-lg">Membership Form</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section id="gallery">
+       
+      <div class="container pt-5 pb-5"> 
+          <div class="galary_top">  
+            <h3 class="underline_one">Gallery</h3>
+            <div >
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="photo">Photo</button>
+                <button class="btn btn-default filter-button" data-filter="video">Video</button> 
+            </div>
+          </div>
+            <br/> 
+            <div class="row">
+                  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter photo">
+                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                  </div> 
+                  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter video">
+                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                  </div>
+
+                  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter photo">
+                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                  </div>
+
+                  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter video">
+                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                  </div>
+
+                  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter photo">
+                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                  </div> 
+                  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter video">
+                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                  </div> 
+             </div> 
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section id="id"> 
+      <div class="container pt-5 pb-5">
+        <div class="row"> 
+          <div class="col-md-8">
+            <h3 class="underline_one">News</h3>
+            <div class="row">
+              <div class="col-md-4 news_item">
+                <img class="img-fluid" src="assets/img/gallery01.png" alt="">
+                <span class="date_news"><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
+                <p class="news_title">ডায়ানার সাক্ষাৎকার নিয়ে বিবিসিকে বরিসের পরামর্শ</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto facere aspernatur?<span class="readMore01">Read More</span></p>
+              </div>
+              <div class="col-md-4 news_item">
+                <img class="img-fluid" src="assets/img/gallery01.png" alt="">
+                <span class="date_news"><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
+                <p class="news_title">ডায়ানার সাক্ষাৎকার নিয়ে বিবিসিকে বরিসের পরামর্শ</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto facere aspernatur?<span class="readMore01">Read More</span></p>
+              </div>
+              <div class="col-md-4 news_item">
+                <img class="img-fluid" src="assets/img/gallery01.png" alt="">
+                <span class="date_news"><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
+                <p class="news_title">ডায়ানার সাক্ষাৎকার নিয়ে বিবিসিকে বরিসের পরামর্শ</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto facere aspernatur? <span class="readMore01">Read More</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3 class="underline_one">Events</h3>
+            <div class="event_layout">
+              <div class="date_event"><p><span>06</span><br>sep,18 </p></div>
+              <div class="event_text">
+                <h5>event title one</h5>
+                <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <span><i class="fas fa-map-marker-alt"></i>  Online</span>
+              </div>
+            </div>
+            <div class="event_layout">
+              <div class="date_event"><p><span>06</span><br>sep,18 </p></div>
+              <div class="event_text">
+                <h5>event title one</h5>
+                <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <span><i class="fas fa-map-marker-alt"></i>  Online</span>
+              </div>
+            </div>
+            <div class="event_layout">
+              <div class="date_event"><p><span>06</span><br>sep,18 </p></div>
+              <div class="event_text">
+                <h5>event title one</h5>
+                <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <span><i class="fas fa-map-marker-alt"></i>  Online</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- discover -->
+  <section id="discover">
+    <!------------------ Hover Effect Style : Demo - 13 --------------->
+    <div class="container pt-5 pb-5">
+      <h3 class="underline_one">DISCOVER</h3> 
+      <div class="row pt-3">
+          <div class="col-md-4 col-sm-6">
+              <div class="box13">
+                  <img src="assets/img/discover01.jpg">
+                  <div class="box-content"> 
+                      <span class="post">Hall-1(Ground Floor) </span> 
+                      <span class="post">Hall-2(First Floor)</span> 
+                      <span class="post">Hall-3(Khela Ghar)</span> 
+                      <span class="post">More</span> 
+                  </div>
+              </div>
+              <h4 class="title_discover">Hall Facilities</h4>
+              
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <div class="box13">
+                  <img src="assets/img/discover02.jpg">
+                  <div class="box-content"> 
+                      <span class="post">Catering Service </span> 
+                      <span class="post">Food Menu</span> 
+                      <span class="post"> Home Service</span> 
+                      <span class="post">More</span> 
+                  </div>
+              </div>
+              <h4 class="title_discover">Cafeteria</h4>
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <div class="box13">
+                  <img src="assets/img/discover03.jpg">
+                  <div class="box-content"> 
+                      <span class="post">Swimming Pool </span> 
+                      <span class="post">Badminton</span> 
+                      <span class="post">GYM</span> 
+                      <span class="post">More</span> 
+                  </div>
+              </div>
+              <h4 class="title_discover">Sports & Recreation</h4>
+          </div>
+      </div>
+  </div>
+  </section>
+<!-- excutive committee -->
+<section id="committee" class="pb-5"> 
+    
+  <div class="container pt-5 pb-5">
+    <h3 class="underline_one">Our Executive Committee</h3>
+        <div class="owl-carousel pt-3">
+          <div>
+            <div class="box8">
+                <img src="assets/img/bod01.jpg">
+                <span class="title">
+                  <p>KHANDKER ANWARUL ISLAM</p>
+                  <p>Chairman</p>
+                  <p>kaimilu@gmail.com</p>
+                </span> 
+                <div class="box-content">
+                    <ul class="icon">
+                      <p><span>Designation:</span> <br> Cabinet Secretary</p>
+                      <p><span>Cadre:</span> <br> BCS (Administration)</p>
+                      <p><span> Membership No.:</span> <br> 01740</p>
+                      <p><span> Mobile:</span> <br> 01711595585</p> 
+                    </ul>
+                </div>
+            </div>
+          </div> 
+          <div>
+            <div class="box8">
+                  <img src="assets/img/bod02.jpg">
+                  <span class="title">
+                    <p>K. M. MOZAMMEL HOQ</p>
+                    <p>Vice Chairman</p>
+                    <p>mozammel_gobd@yahoo.com</p>
+                  </span> 
+                  <div class="box-content">
+                      <ul class="icon">
+                        <p><span>Designation:</span> <br> Secretary</p>
+                        <p><span>Cadre:</span> <br> BCS (Administration)</p>
+                        <p><span> Membership No.:</span> <br>  02142</p>
+                        <p><span> Mobile:</span> <br>  01711645451</p> 
+                      </ul>
+                  </div>
+              </div>
+          </div>  
+          <div>
+            <div class="box8">
+                  <img src="assets/img/bod03.jpg">
+                  <span class="title">
+                    <p>MD. ANSAR ALI KHAN</p>
+                    <p>Vice Chairman</p>
+                    <p> khanvhi@gmail.com</p>
+                  </span> 
+                  <div class="box-content">
+                      <ul class="icon">
+                        <p><span>Designation:</span> <br> Addl. Secretary (Rtd.)</p>
+                        <p><span>Cadre:</span> <br> BCS (Administration)</p>
+                        <p><span> Membership No.:</span> <br>  01855</p>
+                        <p><span> Mobile:</span> <br> 01711947874</p> 
+                      </ul>
+                  </div>
+              </div>
+          </div>  
+          <div>
+            <div class="box8">
+                  <img src="assets/img/bod04.jpg">
+                  <span class="title">
+                    <p>M. KHALID MAHMOOD</p>
+                    <p>Vice Chairman</p>
+                    <p>kaimilu@gmail.com</p>
+                  </span> 
+                  <div class="box-content">
+                      <ul class="icon">
+                        <p><span>Designation:</span> <br> Joint Secretary (Retd.)</p>
+                        <p><span>Cadre:</span> <br> BCS (Administration)</p>
+                        <p><span> Membership No.:</span> <br> 01740</p>
+                        <p><span> Mobile:</span> <br> 01711595585</p> 
+                      </ul>
+                  </div>
+              </div>
+          </div>  
+          <div>
+            <div class="box8">
+                  <img src="assets/img/bod05.jpg">
+                  <span class="title">
+                    <p>MESBAH UDDIN</p>
+                    <p>Chairman</p>
+                    <p>kaimilu@gmail.com</p>
+                  </span> 
+                  <div class="box-content">
+                      <ul class="icon">
+                        <p><span>Designation:</span> <br> Cabinet Secretary</p>
+                        <p><span>Cadre:</span> <br> BCS (Administration)</p>
+                        <p><span> Membership No.:</span> <br> 01740</p>
+                        <p><span> Mobile:</span> <br> 01711595585</p> 
+                      </ul>
+                  </div>
+              </div>
+          </div>  
+          <div>
+            <div class="box8">
+                  <img src="assets/img/bod06.jpg">
+                  <span class="title">
+                    <p>MUSTAKIM BILLAH FARUQUI</p>
+                    <p>Chairman</p>
+                    <p>kaimilu@gmail.com</p>
+                  </span> 
+                  <div class="box-content">
+                      <ul class="icon">
+                        <p><span>Designation:</span> <br> Cabinet Secretary</p>
+                        <p><span>Cadre:</span> <br> BCS (Administration)</p>
+                        <p><span> Membership No.:</span> <br> 01740</p>
+                        <p><span> Mobile:</span> <br> 01711595585</p> 
+                      </ul>
+                  </div>
+              </div>
+          </div>  
+          <div>
+            <div class="box8">
+                  <img src="assets/img/bod07.jpg">
+                  <span class="title">
+                    <p>MD. AZHARUL ISLAM KHAN</p>
+                    <p>Chairman</p>
+                    <p>kaimilu@gmail.com</p>
+                  </span> 
+                  <div class="box-content">
+                      <ul class="icon">
+                        <p><span>Designation:</span> <br> Cabinet Secretary</p>
+                        <p><span>Cadre:</span> <br> BCS (Administration)</p>
+                        <p><span> Membership No.:</span> <br> 01740</p>
+                        <p><span> Mobile:</span> <br> 01711595585</p> 
+                      </ul>
+                  </div>
+              </div>
+          </div>  
+          <div>
+            <div class="box8">
+                  <img src="assets/img/bod08.jpg">
+                  <span class="title">
+                    <p>TANIA KHAN</p>
+                    <p>Chairman</p>
+                    <p>kaimilu@gmail.com</p>
+                  </span> 
+                  <div class="box-content">
+                      <ul class="icon">
+                        <p><span>Designation:</span> <br> Cabinet Secretary</p>
+                        <p><span>Cadre:</span> <br> BCS (Administration)</p>
+                        <p><span> Membership No.:</span> <br> 01740</p>
+                        <p><span> Mobile:</span> <br> 01711595585</p> 
+                      </ul>
+                  </div>
+              </div>
+          </div>  
+          <div>
+            <div class="box8">
+                  <img src="assets/img/bod09.jpg">
+                  <span class="title">
+                    <p>KHANDKER ANWARUL ISLAM</p>
+                    <p>Chairman</p>
+                    <p>kaimilu@gmail.com</p>
+                  </span> 
+                  <div class="box-content">
+                      <ul class="icon">
+                        <p><span>Designation:</span> <br> Cabinet Secretary</p>
+                        <p><span>Cadre:</span> <br> BCS (Administration)</p>
+                        <p><span> Membership No.:</span> <br> 01740</p>
+                        <p><span> Mobile:</span> <br> 01711595585</p> 
+                      </ul>
+                  </div>
+              </div>
+          </div>  
+        </div>
+  </div>
+</section> 
+<footer class="footer">
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-3 footer_item">
+          <h5>About US</h5>
+          <p>Officers’ Club Dhaka was established in 1967 on 4.5 acres (18,000 m2) land in a picturesque setting at Ramna, Bailey Road, Dhaka, Bangladesh. Its membership is open only to government officers and the officers of semi-government or autonomous bodies.</p>
+        </div>
+        <div class="col-md-3 footer_item">
+          <h5>Legal</h5>
+          <div class="footer_li">
+            <li><a href="#"><i class="fas fa-angle-right"></i> Terms of use</a></li>
+            <li><a href="#"><i class="fas fa-angle-right"></i> Privacy Statement</a></li>
+            <li><a href="#"><i class="fas fa-angle-right"></i> Cookies Policy</a></li>
+            <li><a href="#"><i class="fas fa-angle-right"></i> Payment Guidelines</a></li>
+          </div>
+        </div>
+        <div class="col-md-3 footer_item">
+          <h5>Contact Us</h5>
+          <p>Address: 26 Baily Road, Ramna, Dhaka 1000, Bangladesh
+            Phone:+880 2-9358958 (Office), 9346677 (Hall Booking)
+            <br/> e-Mail : officersclubdhaka1967@gmail.com
+            <br/> Hours: Open today · 11:00AM–10PM</p>
+        </div>
+        <div class="col-md-3 footer_logo">
+          <img class="img-fluid" src="assets/img/logo.png" alt="">
+        </div>
+      </div>
+      <hr class="footer_hr"/>
+      <div class="row bottom_footer">
+        <div>
+          <p>© 2021 <a href="#"> Officer's Club Dhaka.</a> All Rights Reserved.</p>
+        </div>
+        <div>IT Support : <a href="#">Spectrum IT Solutions Ltd</a> </div>
+      </div>
+    </div>
+</footer>
+<!-- Modal one-->
+<div class="modal fade" id="ModalOne" tabindex="-1" aria-labelledby="exampleOneLabel" aria-hidden="true">
+  <div class="modal-dialog"> 
+      <div class="modal-body">
+        <img class="img-fluid" src="assets/img/message.png" alt="">
+      </div> 
+  </div>
+</div>
+     <script type="" src="assets/js/jquery.min.js"></script>
+     <script src="assets/js/popper.min.js"></script> 
+     <script src="assets/js/bootstrap.min.js"></script>  
+     <script src="assets/js/wow.min.js"></script> 
+     <!-- ===== owl carousel ===== -->
+     <script src="assets/js/owl.carousel.min.js"></script> 
+       <!-- ===== js file ===== -->
+     <script src="assets/js/main.js"></script>  
+      <!-- ===== IONICONS ===== -->
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>  
+     <script>
+       
+      new WOW().init();
+      $(document).ready(function(){ 
+        $(".owl-carousel").owlCarousel({
+      loop:true,
+      autoplay:true,
+      autoplayHoverPause:true,
+      autoplayTimeout:3000,
+      responsive:{
+        0:{
+            items:1, 
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:6,
+        }
+    }
+  });
+  var owl = $('.explore_slider');
+    owl.owlCarousel(); 
+    $('.NextBtn').click(function() {
+        owl.trigger('next.owl.carousel');
+    }) 
+    $('.PrevBtn').click(function() { 
+        owl.trigger('prev.owl.carousel', [300]);
+    })
+      });
+      
+     </script>
+</body>
+</html>
