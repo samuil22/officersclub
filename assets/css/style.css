@@ -290,7 +290,7 @@
 marquee{
   font-size: 15px;
   color: #fff;
-  background: var(--main-color);
+  background: var(--third-color);
   padding: 5px;
   }
   .marquee_ul{
