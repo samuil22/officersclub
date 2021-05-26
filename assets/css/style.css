@@ -76,6 +76,10 @@
   color: #fff;
 }
   /* top manuber */
+  .top_logo{
+    height: 75px;
+    padding: 2px;
+  }
 .Lang_btn {
     color: #fff;
     border: 1px solid #fff;
@@ -119,9 +123,67 @@
 .modal-dialog{
   max-width: 760px !important;
 }
+.modalLayout {
+  background: white;
+  padding: 0;
+} 
+.modalLayout h4 {
+  background: var(--third-color);
+  color: #fff;
+  padding: 10px;
+} 
+.modalBoxes {
+  display: flex;
+  justify-content: space-evenly;
+} 
+.modalBox1 {
+  font-size: 30px; 
+  padding: 20px 30px;
+  margin: 85px 0px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 150px;
+}
+.modalBox1 a {
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  font-size: 17px;
+  color:var(--third-color);
+}
+.modalBox1 a i{ 
+  font-size: 25px;
+}
+.menu_modal {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  left: 0;
+}
+.text_m_text {
+  position: relative;
+  padding: 10px;
+  background: var(--third-color);
+}
+.text_m_text h5 {
+  margin: 0;
+}
+.text_m_text a{
+  color:#fff;
+}
+.text_m_h5{
+  position: absolute;
+  left: 50%;
+  top: 11px;
+  transform: translate(-50%);
+  color: #fff;
+}
   /* main manuber */
   .wrapper{
-    background: var(--manu-color);
+    background: #004080;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -162,9 +224,13 @@
   .content .links li label{
     display: none;
   }
-  .content .links li a:hover,
+   /*.content .links li a:hover,
   .content .links li label:hover{
-    background: #323c4e;
+    background: #323c4e; 
+  }*/
+  .content .links ul li a:hover{
+    background: #2597DB;
+    color: #000;
   }
   .wrapper .search-icon,
   .wrapper .menu-icon{
@@ -231,13 +297,13 @@
   .content .links ul{
     position: absolute;
     background: var(--main-color);
-    top: 80px;
+    top: 75px;
     z-index: -1;
     opacity: 0;
     visibility: hidden;
   }
   .content .links li:hover > ul{
-    top: 61px;
+    top: 75px;
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease;
@@ -363,6 +429,7 @@ marquee{
 /* news  */
 .news_item img {
   padding: 5px 0;
+  width: 100%;
 }
 .date_news {
   font-size: 14px;
@@ -683,6 +750,9 @@ h4.title_discover:hover {
     }
     .content .links #show-features:checked ~ ul,
     .content .links #show-services:checked ~ ul,
+    .content .links #show-hall:checked ~ ul,
+    .content .links #show-recreation:checked ~ ul,
+    .content .links #show-fitness:checked ~ ul,
     .content .links #show-items:checked ~ ul{
       max-height: 100vh;
     }
@@ -712,6 +782,18 @@ h4.title_discover:hover {
     }
     .wrapper .search-box input{
       padding-right: 30px;
+    }
+    .top_manu p,.Lang_btn,.Link_btn{
+      font-size:9px;
+    }
+    .wrapper {
+      top: 26px;
+    }
+    .fixed_right_btn,.fixed_left_btn{
+      display: none;
+    }
+    .filter-button{
+      margin: 3px 0;
     }
   }
    

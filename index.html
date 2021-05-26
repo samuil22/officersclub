@@ -46,14 +46,14 @@
               <div class="content">
               <div class="logo">
                   <a href="#">
-                  <img class="img-fluid" style="height:75px;" src="assets/img/logo.png" alt="">
+                  <img class="img-fluid top_logo" src="assets/img/logo.png" alt="">
                     </a>
                 </div>
                 <ul class="links">
                     <li>
                         <a href="#" class="desktop-link">About <ion-icon name="chevron-down-outline"></ion-icon></a>
                         <input type="checkbox" id="show-features">
-                        <label for="show-features">About </label>
+                        <label for="show-features">About <ion-icon name="chevron-down-outline"></ion-icon></label>
                         <ul>
                           <li><a href="#">About Club</a></li>
                           <li><a href="#">Chairman</a></li>
@@ -66,8 +66,8 @@
                       </li> 
                   <li>
                     <a href="#" class="desktop-link">Hall <ion-icon name="chevron-down-outline"></ion-icon></a>
-                    <input type="checkbox" id="show-features">
-                    <label for="show-features">Hall </label>
+                    <input type="checkbox" id="show-hall">
+                    <label for="show-hall">Hall <ion-icon name="chevron-down-outline"></ion-icon></label>
                     <ul>
                       <li><a href="#">Hall Book</a></li>
                       <li><a href="#">OCD Hall</a></li>
@@ -80,7 +80,7 @@
                   <li>
                     <a href="#" class="desktop-link">Services <ion-icon name="chevron-down-outline"></ion-icon></a>
                     <input type="checkbox" id="show-services">
-                    <label for="show-services">Services</label>
+                    <label for="show-services">Services <ion-icon name="chevron-down-outline"></ion-icon></label>
                     <ul>
                       <li><a href="#">Catering</a></li>
                       <li><a href="#">Laundry</a></li> 
@@ -97,13 +97,13 @@
                   </li>
                   <li>
                     <a href="#" class="desktop-link">Recreation <ion-icon name="chevron-down-outline"></ion-icon></a>
-                    <input type="checkbox" id="show-services">
-                    <label for="show-services">Recreation</label>
+                    <input type="checkbox" id="show-recreation">
+                    <label for="show-recreation">Recreation <ion-icon name="chevron-down-outline"></ion-icon></label>
                     <ul> 
                       <li>
                         <a href="#" class="desktop-link">Guest House <ion-icon name="chevron-down-outline"></ion-icon></a>
                         <input type="checkbox" id="show-items">
-                        <label for="show-items">Guest House</label>
+                        <label for="show-items">Guest House <ion-icon name="chevron-down-outline"></ion-icon></label>
                         <ul>
                           <li><a href="#">Guest House Book</a></li>
                           <li><a href="#">Guest House Payment</a></li> 
@@ -118,8 +118,8 @@
                   </li>
                   <li>
                     <a href="#" class="desktop-link">Sports & Fitness <ion-icon name="chevron-down-outline"></ion-icon></a>
-                    <input type="checkbox" id="show-features">
-                    <label for="show-features">Sports & Fitness</label> </label>
+                    <input type="checkbox" id="show-fitness">
+                    <label for="show-fitness">Sports & Fitness <ion-icon name="chevron-down-outline"></ion-icon></label> </label>
                     <ul>
                       <li><a href="#">Swimming Pool</a></li>
                       <li><a href="#">Badminton</a></li>
@@ -180,7 +180,7 @@
           </div>
     </div>
     <div class="fixed_right_btn">
-      <a href="#" data-toggle="modal" data-target="#ModalOne"><i class="far fa-comment-dots"></i></a>
+      <a href="#" data-toggle="modal" type="button" data-target="#modalOne"><i class="far fa-comment-dots"></i></a>
       <a href="#" data-toggle="modal" data-target="#ModalTwo"><i class="fas fa-poll"></i></a> 
     </div>
     <div class="fixed_left_btn">
@@ -541,7 +541,7 @@
   </div>
 </section> 
 <footer class="footer" id="contact">
-    <div class="container pt-5 pb-5">
+    <div class="container pt-5">
       <div class="row">
         <div class="col-md-3 footer_item">
           <h5>About US</h5>
@@ -587,11 +587,114 @@
     </div>
 </footer>
 <!-- Modal one-->
-<div class="modal fade" id="ModalOne" tabindex="-1" aria-labelledby="exampleOneLabel" aria-hidden="true">
+<div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="exampleOneLabel" aria-hidden="true">
   <div class="modal-dialog"> 
-      <div class="modal-body">
-        <a onclick="Change()" href=""><img id="change" class="img-fluid" src="assets/img/message.png" alt=""></a>
-      </div> 
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body modalLayout">
+          <h4 class="text-center"> বাছাই করুন</h4> 
+          <div id="Menu1" class="menu_modal" style="display: none;">
+            <div class="text_m_text">
+              <a href="#" onclick="toggleVisibility('home');"><h5><i class="fas fa-chevron-left"></i> লিস্ট দেখুন</h5></a>
+              <h5 class="text_m_h5"> মন্তব্য</h5>
+            </div>
+            
+            <div class="p-5">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">
+                      আপনার ইমেইল</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">আপনার প্রতিক্রিয়া লিখুন</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="button" class="btn filter-button"> জমা দিন</button>
+                </form>
+            </div>
+          </div>
+          <div id="Menu2" class="menu_modal" style="display: none;">
+            <div class="text_m_text">
+              <a href="#" onclick="toggleVisibility('home');"><h5><i class="fas fa-chevron-left"></i> লিস্ট দেখুন</h5></a>
+              <h5 class="text_m_h5"> প্রতিক্রিয়া</h5>
+            </div>
+            
+            <div class="p-5">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">
+                      আপনার ইমেইল</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">আপনার প্রতিক্রিয়া লিখুন</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="button" class="btn filter-button"> জমা দিন</button>
+                </form>
+            </div>
+          </div>
+          <div id="Menu3" class="menu_modal" style="display: none;">
+            <div class="text_m_text">
+              <a href="#" onclick="toggleVisibility('home');"><h5><i class="fas fa-chevron-left"></i> লিস্ট দেখুন</h5></a>
+              <h5 class="text_m_h5"> পরামর্শ</h5>
+            </div>
+            
+            <div class="p-5">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">
+                      আপনার ইমেইল</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">আপনার প্রতিক্রিয়া লিখুন</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="button" class="btn filter-button"> জমা দিন</button>
+                </form>
+            </div>
+          </div>
+          <div id="Menu4" class="menu_modal" style="display: none;">
+            <div class="text_m_text">
+              <a href="#" onclick="toggleVisibility('home');"><h5><i class="fas fa-chevron-left"></i> লিস্ট দেখুন</h5></a>
+              <h5 class="text_m_h5"> অভিযোগ</h5>
+            </div>
+            
+            <div class="p-5">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">
+                      আপনার ইমেইল</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">আপনার প্রতিক্রিয়া লিখুন</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="button" class="btn filter-button"> জমা দিন</button>
+                </form>
+            </div>
+          </div>
+          <div id="home" style="display: block;">
+            <div class="modalBoxes">
+              <div class="modalBox1"><a href="#" onclick="toggleVisibility('Menu1');"><i class="fas fa-comments"></i><br/> মন্তব্য</a></div> 
+              <div class="modalBox1"><a href="#" onclick="toggleVisibility('Menu2');"><i class="fas fa-comments"></i> <br/> প্রতিক্রিয়া</a></div> 
+              <div class="modalBox1"><a href="#" onclick="toggleVisibility('Menu3');"><i class="fas fa-comments"></i> <br/> পরামর্শ</a></div> 
+              <div class="modalBox1"><a href="#" onclick="toggleVisibility('Menu4');"><i class="fas fa-comments"></i> <br/> অভিযোগ</a></div> 
+            </div>
+          </div>
+        </div> 
+      </div>
   </div>
 </div>
 <!-- Modal Two-->
@@ -643,6 +746,30 @@
     })
       });
       
+     </script>
+     <script>
+       var divs = ["Menu1", "Menu2", "Menu3", "Menu4","home"];
+          var visibleDivId = null;
+          function toggleVisibility(divId) {
+            if(visibleDivId === divId) {
+              //visibleDivId = null;
+            } else {
+              visibleDivId = divId;
+            }
+            hideNonVisibleDivs();
+          }
+          function hideNonVisibleDivs() {
+            var i, divId, div;
+            for(i = 0; i < divs.length; i++) {
+              divId = divs[i];
+              div = document.getElementById(divId);
+              if(visibleDivId === divId) {
+                div.style.display = "block";
+              } else {
+                div.style.display = "none";
+              }
+            }
+          }
      </script>
 </body>
 </html>
