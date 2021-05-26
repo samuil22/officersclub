@@ -76,23 +76,45 @@
   color: #fff;
 }
   /* top manuber */
+.Lang_btn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0px 5px 0 0;
+    margin: 2px;
+}
+.Lang_btn span{
+  padding: 0 5px;
+  background: var(--third-color);
+  border-radius: 4px 0 0 4px;
+}
+.Lang_btn:hover {
+  color: #fff;
+}
   .top_manu {
-    display: flex;
-    justify-content: space-around;
     background: var(--main-color);
     position: fixed;
     top: 0;
     z-index: 999;
     width: 100%;
 }
+.top_manu_container{ 
+  display: flex;
+  justify-content: space-between;
+}
 .top_manu p{
     padding: 7px;
     color: var(--white-color);
     margin: 0;
+    font-size: 12px;
 }
 .Link_btn{
     color:#fff;
+    font-size: 12px;
 }
+.Link_btn:hover{
+    color:#fff; 
+}
+
 /* modal */
 .modal-dialog{
   max-width: 760px !important;
@@ -103,16 +125,16 @@
     position: fixed;
     width: 100%;
     z-index: 999;
-    top: 38px;
+    top: 31px;
   }
-  .wrapper nav{ 
+  /* .wrapper nav{ 
     max-width: calc(100% - 200px);
     margin: 0 auto; 
-  }
+  } */
   nav .content{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   nav .content .links{ 
     display: flex;
@@ -130,7 +152,7 @@
   .content .links li a,
   .content .links li label{
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     padding: 9px 17px;
     border-radius: 0px;
@@ -215,7 +237,7 @@
     visibility: hidden;
   }
   .content .links li:hover > ul{
-    top: 67px;
+    top: 61px;
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease;
@@ -229,7 +251,7 @@
   .content .links ul ul{
     position: absolute;
     top: 0;
-    right: calc(-100% + -58px);
+    right: calc(-100% + -54px);
   }
   .content .links ul li{
     position: relative;
@@ -240,6 +262,8 @@
   /* main landing page slider */
   .slider {
     position: relative;
+    top: 1px;
+    margin-top: 100px;
 }
 .slider::before {
     content: "";
@@ -258,24 +282,26 @@
     bottom:unset;
 }
 .slider_text h1{
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 700;
     letter-spacing: 3px;
 }
 /* marquee area  */
 marquee{
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   background: var(--main-color);
   padding: 5px;
   }
   .marquee_ul{
     margin: 0;
+    display: flex;
   }
-.marquee_ul li:first-child {
-  float: left;
-  padding-right: 50px;
-}
+  .marquee_ul li{
+    list-style: none;
+    margin-left: 50px;
+  }
+
  /* about area  */
  .about_text_bold {
   font-weight: 700;

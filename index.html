@@ -24,17 +24,22 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="top_manu">
-        <div>
-            <p><ion-icon name="call"></ion-icon> +880-2-9358958,9346677</p>
-        </div>
-        <div>
-            <button type="button" class="btn  Link_btn"><i class="fas fa-sign-in-alt"></i> Link</button>
+    <div class=" top_manu">
+        <div class="container top_manu_container">
+          <div >
+              <p><ion-icon name="call"></ion-icon> +880-2-9358958 , 9346677</p>
+          </div>
+          <div class="d-flex">
+              <div> 
+                <button type="button" class="btn  Lang_btn"><span>En</span> বাংলা</button>
+              </div>
+              <button type="button" class="btn  Link_btn"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+          </div>
         </div>
     </div>
     <div class="main_nav">
         <div class="wrapper">
-            <nav>
+            <nav class="container">
               <input type="checkbox" id="show-search">
               <input type="checkbox" id="show-menu">
               <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
@@ -71,7 +76,7 @@
                       <li><a href="#">Calender</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">Cetefitia</a></li>
+                  <li><a href="#">Cafeteria</a></li>
                   <li>
                     <a href="#" class="desktop-link">Services <ion-icon name="chevron-down-outline"></ion-icon></a>
                     <input type="checkbox" id="show-services">
@@ -116,6 +121,7 @@
                     <input type="checkbox" id="show-features">
                     <label for="show-features">Sports & Fitness</label> </label>
                     <ul>
+                      <li><a href="#">Swimming Pool</a></li>
                       <li><a href="#">Badminton</a></li>
                       <li><a href="#">GYM</a></li>
                       <li><a href="#">Squash</a></li>
@@ -187,15 +193,17 @@
     ">
     <marquee class="marquee" direction="left" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start();">
       <ul class="marquee_ul">
-        <li>Its membership is open only to government officers and the officers of semi-government or autonomous bodies. The land with a colonial building was given to the club by the Public Works Department.</li>
-        <li>The membership of Officer’s Club Dhaka is open only to government officers and the officers of semi-government or autonomous bodies.</li>
+        <li><img src="assets/img/marqueelogo.png" alt=""> Its membership is open only to government officers and the officers of semi-government or autonomous bodies. </li>
+        <li ><img src="assets/img/marqueelogo.png" alt=""> The membership of Officer’s Club Dhaka is open only to government officers and the officers of semi-government or autonomous bodies.</li>
+        <li ><img src="assets/img/marqueelogo.png" alt=""> Officer’s Club Dhaka is open only to government officers and the officers of semi-government or autonomous bodies.</li>
+
       </ul>
     </marquee> 
 
     </div>
     <!-- about area -->
     <section id="about">
-      <div class="container pt-5 pb-5">
+      <div class="container pt-3 pb-1">
         <div class="row">
             <div class="col-md-8">
                <h3 class="underline_one">About</h3>
@@ -239,15 +247,16 @@
     </section>
     <!-- membership -->
     <section id="member"> 
-      <div class="container pt-5 pb-5"> 
+      <div class="container pb-2"> 
         <h3 class="underline_one">Membership</h3>
         <div class="row pt-3">
           <div class="col-md-6">
             <img class="img-fluid" src="assets/img/member.jpg" alt="">
           </div>
-          <div class="col-md-6 pt-4">
+          <div class="col-md-6  ">
             <p>The membership of Officer’s Club Dhaka is open only to government officers and the officers of semi-government or autonomous bodies. The land with a colonial building was given to the club by the Public Works Department. The government also provided funds to construct an auditorium, covered badminton complex, swimming pool and tennis courts etc.</p>
             <button type="button" class="btn filter-button btn-lg">Membership Form</button>
+            <button type="button" class="btn filter-button btn-lg">Qualification Criteria</button>
           </div>
         </div>
       </div>
@@ -255,7 +264,7 @@
     <!-- Gallery -->
     <section id="gallery">
        
-      <div class="container pt-5 pb-5"> 
+      <div class="container "> 
           <div class="galary_top">  
             <h3 class="underline_one">Gallery</h3>
             <div >
@@ -267,50 +276,50 @@
             <br/> 
             <div class="row">
                   <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter photo">
-                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                      <img class="img-fluid" src="assets/img/gallery001.jpg" class="img-responsive">
                   </div> 
                   <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter video">
+                      <img class="img-fluid" src="assets/img/gallaryvideo.png" class="img-responsive">
+                  </div>
+
+                  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter photo">
+                      <img class="img-fluid" src="assets/img/gallery02.jpg" class="img-responsive">
+                  </div>
+
+                  <!-- <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter video">
                       <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
                   </div>
 
                   <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter photo">
                       <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
-                  </div>
-
-                  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter video">
-                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
-                  </div>
-
-                  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter photo">
-                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
                   </div> 
                   <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter video">
-                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive">
+                      <img class="img-fluid" src="http://fakeimg.pl/365x365/" class="img-responsive"> -->
                   </div> 
              </div> 
       </div>
     </section>
     <!-- Gallery -->
     <section id="id"> 
-      <div class="container pt-5 pb-5">
+      <div class="container  pb-3">
         <div class="row"> 
           <div class="col-md-8">
             <h3 class="underline_one">News</h3>
             <div class="row">
               <div class="col-md-4 news_item">
-                <img class="img-fluid" src="assets/img/gallery01.png" alt="">
+                <img class="img-fluid" src="assets/img/gallery06.jpg" alt="">
                 <span class="date_news"><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
                 <p class="news_title">ডায়ানার সাক্ষাৎকার নিয়ে বিবিসিকে বরিসের পরামর্শ</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto facere aspernatur?<span class="readMore01">Read More</span></p>
               </div>
               <div class="col-md-4 news_item">
-                <img class="img-fluid" src="assets/img/gallery01.png" alt="">
+                <img class="img-fluid" src="assets/img/gallery06.jpg" alt="">
                 <span class="date_news"><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
                 <p class="news_title">ডায়ানার সাক্ষাৎকার নিয়ে বিবিসিকে বরিসের পরামর্শ</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto facere aspernatur?<span class="readMore01">Read More</span></p>
               </div>
               <div class="col-md-4 news_item">
-                <img class="img-fluid" src="assets/img/gallery01.png" alt="">
+                <img class="img-fluid" src="assets/img/gallery06.jpg" alt="">
                 <span class="date_news"><i class="fas fa-calendar-alt"></i> Date:12-14-21</span> 
                 <p class="news_title">ডায়ানার সাক্ষাৎকার নিয়ে বিবিসিকে বরিসের পরামর্শ</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto facere aspernatur? <span class="readMore01">Read More</span></p>
@@ -350,7 +359,7 @@
   <!-- discover -->
   <section id="discover">
     <!------------------ Hover Effect Style : Demo - 13 --------------->
-    <div class="container pt-5 pb-5">
+    <div class="container   pb-3">
       <h3 class="underline_one">DISCOVER</h3> 
       <div class="row pt-3">
           <div class="col-md-4 col-sm-6">
@@ -396,7 +405,7 @@
 <!-- excutive committee -->
 <section id="committee" class="pb-5"> 
     
-  <div class="container pt-5 pb-5">
+  <div class="container">
     <h3 class="underline_one">Our Executive Committee</h3>
         <div class="owl-carousel pt-3">
           <div>
@@ -546,15 +555,25 @@
           </div>
         </div>
         <div class="col-md-3 footer_item">
+          <h5>Usefull Links</h5>
+          <div class="footer_li">
+            <li><a href="https://mujib100.gov.bd/"><i class="fas fa-angle-right"></i> Mujib 100</a></li>
+            <li><a href="https://bangladesh.gov.bd/index.php"><i class="fas fa-angle-right"></i> Bangladesh Portal</a></li>
+            <li><a href="https://www.coroma-project.eu/"><i class="fas fa-angle-right"></i> Coroma</a></li>
+            <li><a href="https://www.ucl.com.bd/"><i class="fas fa-angle-right"></i> Uttara Club Ltd.</a></li>
+            <li><a href="http://www.dhakaclubltd.com/"><i class="fas fa-angle-right"></i> Dhaka Club Ltd.</a></li>
+          </div>
+        </div>
+        <div class="col-md-3 footer_item">
           <h5>Contact Us</h5>
           <p>Address: 26 Baily Road, Ramna, Dhaka 1000, Bangladesh
             Phone:+880 2-9358958 (Office), 9346677 (Hall Booking)
             <br/> e-Mail : officersclubdhaka1967@gmail.com
             <br/> Hours: Open today · 11:00AM–10PM</p>
         </div>
-        <div class="col-md-3 footer_logo">
+        <!-- <div class="col-md-3 footer_logo">
           <img class="img-fluid" src="assets/img/logo.png" alt="">
-        </div>
+        </div> -->
       </div>
       <hr class="footer_hr"/>
       <div class="row bottom_footer">
@@ -569,7 +588,7 @@
 <div class="modal fade" id="ModalOne" tabindex="-1" aria-labelledby="exampleOneLabel" aria-hidden="true">
   <div class="modal-dialog"> 
       <div class="modal-body">
-        <img class="img-fluid" src="assets/img/message.png" alt="">
+        <a onclick="Change()" href=""><img id="change" class="img-fluid" src="assets/img/message.png" alt=""></a>
       </div> 
   </div>
 </div>
@@ -577,7 +596,7 @@
 <div class="modal fade" id="ModalTwo" tabindex="-1" aria-labelledby="exampleTwoLabel" aria-hidden="true">
   <div class="modal-dialog"> 
       <div class="modal-body">
-        <img class="img-fluid" src="assets/img/poll.png" alt="">
+        <img  class="img-fluid" src="assets/img/poll.png" alt="">
       </div> 
   </div>
 </div>
