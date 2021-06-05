@@ -1,0 +1,63 @@
+#guestHouse{ 
+    background-image:url(../img/guestHouse/OfficersClubDhaka.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: hue;
+    position: relative;
+}
+section#guestHouse:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #02020282;
+    position: absolute;
+    top: 0;
+    opacity: 0.9;
+    left: 0;
+}
+.guest_top_text{
+    display: flex;
+    align-items: center;
+} 
+.guest_form_availablea{
+    opacity: 0.9;
+}
+.guest_form_availablea label{
+    color:#fff;
+}
+.guest_top_text > div {
+    color:#fff;
+} 
+.guest_top_text > div > h1 > span{
+    font-weight: 200;
+}
+.roomsDetails_img img {
+    height: 225px;
+    width: 100%;
+}
+.roomsDetails {
+    padding: 10px;
+    border: 1px solid #cccccc8a;
+    margin-bottom: 10px;
+}
+.roomsItems{
+    display: flex;
+    justify-content: space-between;
+}
+.rating i{
+    color:orange;
+}
+.guestBook_img img{
+    width: 100%;
+}
+.varify_code{
+    display:flex;
+    justify-content:center;
+}
+.varify_code > form > input {
+    width: 40px;
+    border-radius: 0;
+    margin: -1px;
+    padding: 0 12px;
+}
+}

@@ -40,12 +40,12 @@
     <div class="main_nav">
         <div class="wrapper">
             <nav class="container">
-              <input type="checkbox" id="show-search">
-              <input type="checkbox" id="show-menu">
+              <!-- <input type="checkbox" id="show-search">
+              <input type="checkbox" id="show-menu"> -->
               <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
               <div class="content">
               <div class="logo">
-                  <a href="#">
+                  <a href="index.html">
                   <img class="img-fluid top_logo" src="assets/img/logo.png" alt="">
                     </a>
                 </div>
@@ -87,7 +87,7 @@
                       <li>
                         <a href="#" class="desktop-link">Salon <ion-icon name="chevron-down-outline"></ion-icon></a>
                         <input type="checkbox" id="show-items">
-                        <label for="show-items">Salon</label>
+                        <label for="show-items">Salon <ion-icon name="chevron-down-outline"></ion-icon></label>
                         <ul>
                           <li><a href="#">Salon Booking</a></li>
                           <li><a href="#">Salon Payment</a></li> 
@@ -102,10 +102,10 @@
                     <ul> 
                       <li>
                         <a href="#" class="desktop-link">Guest House <ion-icon name="chevron-down-outline"></ion-icon></a>
-                        <input type="checkbox" id="show-items">
-                        <label for="show-items">Guest House <ion-icon name="chevron-down-outline"></ion-icon></label>
+                        <input type="checkbox" id="show-guest">
+                        <label for="show-guest">Guest House <ion-icon name="chevron-down-outline"></ion-icon></label>
                         <ul>
-                          <li><a href="#">Guest House Book</a></li>
+                          <li><a href="guestHouseBooking.html">Guest House Book</a></li>
                           <li><a href="#">Guest House Payment</a></li> 
                         </ul>
                       </li>
@@ -135,6 +135,7 @@
             </nav>
           </div>
     </div>
+    <!-- menu area end -->
     <!-- landing slider area -->
     <div class="slider">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -540,6 +541,7 @@
         </div>
   </div>
 </section> 
+<!-- footer area start -->
 <footer class="footer" id="contact">
     <div class="container pt-5">
       <div class="row">
@@ -759,58 +761,10 @@
      <script>
        
       new WOW().init();
-      $(document).ready(function(){ 
-        $(".owl-carousel").owlCarousel({
-      loop:true,
-      autoplay:true,
-      autoplayHoverPause:true,
-      autoplayTimeout:3000,
-      responsive:{
-        0:{
-            items:1, 
-        },
-        600:{
-            items:3,
-        },
-        1000:{
-            items:6,
-        }
-    }
-  });
-  var owl = $('.explore_slider');
-    owl.owlCarousel(); 
-    $('.NextBtn').click(function() {
-        owl.trigger('next.owl.carousel');
-    }) 
-    $('.PrevBtn').click(function() { 
-        owl.trigger('prev.owl.carousel', [300]);
-    })
-      });
-      
+    
      </script>
      <script>
-       var divs = ["Menu1", "Menu2", "Menu3", "Menu4","home"];
-          var visibleDivId = null;
-          function toggleVisibility(divId) {
-            if(visibleDivId === divId) {
-              //visibleDivId = null;
-            } else {
-              visibleDivId = divId;
-            }
-            hideNonVisibleDivs();
-          }
-          function hideNonVisibleDivs() {
-            var i, divId, div;
-            for(i = 0; i < divs.length; i++) {
-              divId = divs[i];
-              div = document.getElementById(divId);
-              if(visibleDivId === divId) {
-                div.style.display = "block";
-              } else {
-                div.style.display = "none";
-              }
-            }
-          }
+      
      </script>
 </body>
 </html>
