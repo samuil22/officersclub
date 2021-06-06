@@ -11,3 +11,12 @@
 .table td, .table th{
     padding: .5rem;
 }
+.details_ad {
+    margin: 2px 0px;
+    padding: 0px 5px;
+    font-size: 12px;
+    background: green;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+}
