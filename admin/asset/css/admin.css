@@ -1,0 +1,13 @@
+.tableArea{
+    padding:0 .5rem;
+}
+.latestNews {
+    background: #fff;
+    padding: 15px;
+}
+.latestNews h4{
+    padding-bottom: 10px;
+}
+.table td, .table th{
+    padding: .5rem;
+}
