@@ -60,4 +60,9 @@ section#guestHouse:before {
     margin: -1px;
     padding: 0 12px;
 }
+.ico_color{
+    color:#208063;
+}
+.roomsItems h4 {
+    color: #208063;
 }
