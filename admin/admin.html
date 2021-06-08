@@ -46,15 +46,54 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-danger navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div> 
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <div class="user-panel d-flex">
+            <div class="image">
+              <img src="dist/img/logo.png" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+               Admin
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">admin@gmail.com</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-key"></i> Change password
+          </a>
+          <div class="dropdown-divider"></div>  
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-sign-out-alt"></i> Log Out 
+          </a> 
+        </div>
+      </li>
         <!-- Sidebar user panel (optional) -->
-      <div class="user-panel d-flex">
-        <div class="image">
-          <img src="dist/img/logo.png" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Admin@gmail.com</a>
-        </div>
-      </div>
+     
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -97,7 +136,7 @@
               </p>
             </a> 
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
@@ -105,12 +144,12 @@
                 <span class="right badge badge-danger">New</span>
               </p>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Layout Options
+                Member
                 <i class="fas fa-angle-left right"></i>
                 <span class="badge badge-info right">6</span>
               </p>
@@ -119,58 +158,46 @@
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
+                  <p>Designation</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
+                  <p>Add Member</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
+                  <p>New Members</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
+                  <p>Active Members</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar <small>+ Custom Area</small></p>
+                  <p>Inactive Members</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
+                  <p>All Members</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
+              </li>  
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Charts
+               Hall
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -205,7 +232,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tree"></i>
               <p>
-                UI Elements
+                Cafeteria
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -264,7 +291,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-                Forms
+                Guest House
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -299,7 +326,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
-                Tables
+                Swimming Pool
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -324,37 +351,22 @@
               </li>
             </ul>
           </li>
-          <li class="nav-header">EXAMPLES</li>
+          <!-- <li class="nav-header">EXAMPLES</li> 
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
-                Calendar
+                Salon
                 <span class="badge badge-info right">2</span>
               </p>
             </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
-              <p>
-                Gallery
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
-              <p>
-                Kanban Board
-              </p>
-            </a>
-          </li>
+          </li>-->
+          
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>
-                Mailbox
+                Salon
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -383,7 +395,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-book"></i>
               <p>
-                Pages
+                Event & Notice
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -393,20 +405,14 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Invoice</p>
                 </a>
-              </li>      
-              <li class="nav-item">
-                <a href="pages/examples/contact-us.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contact us</p>
-                </a>
-              </li>
+              </li>   
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
-                Extras
+                Coupon
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -484,13 +490,89 @@
             </ul>
           </li>
           <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Fees
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Invoice</p>
+                </a>
+              </li>   
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                SMS
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Invoice</p>
+                </a>
+              </li>   
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Accounts
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Invoice</p>
+                </a>
+              </li>   
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                Inquiry 
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item">
             <a href="../index.html" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 Website 
               </p>
             </a>
-          </li>  
+          </li> 
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Others
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Invoice</p>
+                </a>
+              </li>   
+            </ul>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -541,7 +623,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-success">
+            <div class="small-box bg-info">
               <div class="inner">
                 <h3>17</h3>
 
@@ -556,7 +638,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-warning">
+            <div class="small-box bg-info">
               <div class="inner">
                 <h3>0</h3>
 
@@ -571,7 +653,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-info">
               <div class="inner">
                 <h3>65</h3>
 
@@ -602,7 +684,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-success">
+            <div class="small-box bg-info">
               <div class="inner">
                 <h3>12<sup style="font-size: 20px">%</sup></h3>
 
@@ -617,7 +699,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-warning">
+            <div class="small-box bg-info">
               <div class="inner">
                 <h3>23</h3>
 
@@ -632,7 +714,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-info">
               <div class="inner">
                 <h3>13</h3>
 
@@ -769,12 +851,86 @@
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
     </section>
+    <!-- one table one row -->
+    <section class="tableArea">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="bookingTable card">
+              <h4 class="text-center text-info">Booking Details</h4>
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th scope="col">Booking</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Check In</th>
+                    <th scope="col">Check Out</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Phone</th>
+                    <th>Edit</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr> 
+                    <td>Hall</td>
+                    <td>Md.Malek</td>
+                    <td> 23-02-21</td>
+                    <td>25-02-21 </td>
+                    <td><button class="paid_ad">paid</button></td>
+                    <td>Full Room</td>
+                    <td>01754-632512</td>
+                    <td><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><button class="details_ad">Details</button></td>
+                  </tr>
+                  <tr> 
+                    <td>Cafeteria</td>
+                    <td>Md.A.Rahim</td>
+                    <td>17-02-21</td>
+                    <td>19-02-21</td>
+                    <td><button class="unpaid_ad">unpaid</button></td>
+                    <td></td>
+                    <td>01754-632512</td>
+                    <td><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><button class="details_ad">Details</button></td>
+                  </tr>
+                  <tr>  
+                    <td>Guest House</td>
+                    <td>Mr.Kumar</td>
+                    <td> 13-02-21</td>
+                    <td>16-02-21</td>
+                    <td><button class="unpaid_ad">unpaid</button></td>
+                    <td></td>
+                    <td>01754-632512</td>
+                    <td><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><button class="details_ad">Details</button></td>
+                  </tr>
+                  <tr>  
+                    <td>Swimming Pool</td>
+                    <td>Md.Rasel Ahmed</td>
+                    <td>15-02-21</td>
+                    <td> 22-02-21</td>
+                    <td><button class="paid_ad">paid</button></td>
+                    <td></td>
+                    <td>01754-632512</td>
+                    <td><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><button class="details_ad">Details</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- three table -->
     <section class="tableArea ">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">
             <div class="latestNews card">
-              <h4 class="text-center">Latest News</h4>
+              <h4 class="text-center text-info">Latest News</h4>
               <table class="table table-bordered table-responsive">
                 <thead>
                   <tr>
@@ -821,7 +977,7 @@
           <div class="col-md-4">
             <div class="inquery">
               <div class="latestNews card">
-                <h4 class="text-center">Event Information</h4>
+                <h4 class="text-center text-info">Event Information</h4>
                 <table class="table table-bordered">
                   <thead>
                     <tr>
@@ -859,7 +1015,7 @@
           <div class="col-md-4">
             <div class="eventInfo">
               <div class="latestNews card">
-                <h4 class="text-center">Inquiry</h4>
+                <h4 class="text-center text-info">Inquiry</h4>
                 <table class="table table-bordered">
                   <thead>
                     <tr>

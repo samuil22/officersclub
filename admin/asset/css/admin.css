@@ -21,3 +21,24 @@
     border: none;
     font-weight: 700;
 }
+.paid_ad {
+    margin: 2px 0px;
+    padding: 0px 5px;
+    font-size: 12px;
+    background: #34D9B8;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+}
+.unpaid_ad {
+    margin: 2px 0px;
+    padding: 0px 5px;
+    font-size: 12px;
+    background: #FF637D;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+}
+.bookingTable{
+    padding: 15px;
+}
