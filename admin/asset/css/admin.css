@@ -99,3 +99,7 @@ p.sty_date {
 p.sty_date span {
     font-size: 12px;
 }
+.navbar-whiteOne {
+    background-color: #00404c;
+    color: #fff;
+}
